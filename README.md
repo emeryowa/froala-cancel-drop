@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
 
+To reproduce:
+
+1. Clone repository
+2. Run `npm install`
+3. Run `ng serve --open`
+4. Drop an image into the Froala editor
+5. Drop event is not triggered
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
