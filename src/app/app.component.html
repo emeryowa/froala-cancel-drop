@@ -1,3 +1,6 @@
-<div [froalaEditor]="froalaOptions">Hello, Froala!</div>
+Hello!
 
+<app-editor *ngIf="showEditor" [form]="myForm"></app-editor>
 
+<br><br><br>
+<button (click)="showEditor = !showEditor" type="button">Toggle editor</button>

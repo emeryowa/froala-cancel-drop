@@ -7,9 +7,7 @@ To reproduce:
 1. Clone repository
 2. Run `npm install`
 3. Run `ng serve --open`
-4. Drop an image into the Froala editor
-5. Drop event is not triggered
-
+TBC
 
 ## Development server
 

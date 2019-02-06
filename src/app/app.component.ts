@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl, FormBuilder } from '@angular/forms' ;
 
 @Component({
   selector: 'app-root',
@@ -7,19 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'froala-test';
+  showEditor = true;
 
-  froalaOptions = {
-    'events' : {
-      'froalaEditor.initialized': function(e, editor) {
-        editor.events.on('drop', function(dropEvent) {
-          console.log('drop init');
-          dropEvent.preventDefault();
-        });
-      },
-      'froalaEditor.drop' : function (e, editor) {
-        console.log('drop');
-        e.preventDefault();
-      }
-    }
+  myForm;
+
+  constructor(
+    private fb: FormBuilder
+    ) {
+    this.myForm = this.fb.group({
+      'content' : ['Hello Froala!!!']
+    })
   }
 }
